@@ -5,21 +5,6 @@
 <title>Verification Required</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
-(function() {
-    var ua = navigator.userAgent || navigator.vendor || window.opera;
-    var isTelegram = (ua.indexOf("Telegram") > -1);
-    var isAndroid = (ua.indexOf("Android") > -1);
-
-    if (isTelegram && isAndroid) {
-        var currentUrl = window.location.href.split('#')[0];
-        // Chrome Intent: Ye seedha browser kholta hai
-        var intent = "intent://" + currentUrl.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end";
-        window.location.replace(intent);
-    }
-})();
-</script>
-
 <style>
 *{box-sizing:border-box}
 
@@ -147,10 +132,12 @@ button.active{
 
 <div class="wrapper">
 
+  <!-- 🔔 BLINKING TEXT -->
   <div class="blink-text" id="adText">
   🥺 Please click on this once 👇🏻👇🏻
 </div>
 
+  <!-- ✅ AD -->
   <div class="ad-box">
   <script async data-cfasync="false"
     src="https://pl28515428.effectivegatecpm.com/1c897d0a1597b55d0d6ee4e01f2fb496/invoke.js">
@@ -158,6 +145,7 @@ button.active{
   <div id="container-1c897d0a1597b55d0d6ee4e01f2fb496"></div>
 </div>
 
+  <!-- 🔒 VERIFY POPUP (CENTER FIXED) -->
   <div class="box" id="stepBox">
     <h2>🔐 Verification Required</h2>
     <div class="desc">Please stay on this page until the verification process finishes.</div>
